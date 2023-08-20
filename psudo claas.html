@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo class</title>
+    <style>
+       .Special-effect:hover{
+        color: yellow;
+        font-size: 50px;
+       }
+       .effect:hover{
+        color: yellow;
+        font-size: 50px;
+       }
+       input:focus{
+        color: green;
+        font-size: 20px;
+        background-color: aquamarine;
+       }
+       p:nth-child(2n){
+        background-color: brown;
+        background-size: 30%;
+      
+
+       }
+      .after::after{
+        content: "  room 103";
+        color: rgb(231, 217, 217);
+        font-size: 15px;
+        background-color:blue;
+       }
+       body {
+  counter-reset: section; /* Set a counter named 'section', and its initial value is 0. */
+}
+
+p::before {
+  counter-increment: section; /* Increment the value of section counter by 1 */
+  content: "Bed no " counter(section) ": 😍 "; /* Display the word 'Section ', the value of
+                                                section counter, and a colon before the content
+                                                of each h3 */
+}
+
+       
+    </style>
+</head>
+<body>
+   <h1>psudo class</h1>
+   <h1 class="after">Poptical Room</h1>
+   <h1 class="Special-effect">Roman</h1>
+   <input type="text" name="E-mail">
+   <br>
+   <br>
+   <input type="text" name="password">
+    <p>Toukir</p>
+    <p>Sumon</p>
+    <p>Rifat</p>
+    <p>Roman</p>
+    <p>Shupto</p>
+    <p>Azrul</p>
+    <li class="effect">Rabbi<li>
+    <p>Robin(outsider of room)</p>
+    
+ 
+
+</body>
+</html>
